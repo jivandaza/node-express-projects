@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--     **********************     METAS     **********************     -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!--     **********************     HEAD TITLE     **********************     -->
+    <title>Page Not Found</title>
+
+    <!--     **********************     HEAD ICON     **********************     -->
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon-task.png?">
+
+    <!--     **********************     BOOTSTRAP     **********************     -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!--     **********************     STYLES CUSTOM     **********************     -->
+    <style>
+        body{
+            background: rgb(8,28,34);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+        }
+        img{
+            width: 50%;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            color: rgb(233, 238, 245);
+            font-size: 20px;
+            padding: 20px;
+        }
+        a{
+            padding: 13px 30px;
+            border-radius: 15px;
+            border: none;
+            background: rgb(5, 129, 245);
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            opacity: .7;
+        }
+        @media screen and (max-width:630px){
+            h1{
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../img/error-404.svg" alt="Error 404">
+        <h1>The page you requested is not available</h1>
+        <div>
+            <a href="http://localhost:3000">Go Home</a>
+        </div>
+    </div>
+</body>
+</html>

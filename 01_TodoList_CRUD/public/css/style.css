@@ -1,0 +1,32 @@
+.btn-state, .btn-edit, .btn-remove, #homePage {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-state:hover, .btn-edit:hover, .btn-remove:hover {
+    opacity: .5;
+}
+
+.center-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-data > p {
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+#frmMessage {
+    letter-spacing: 4px;
+    border-radius: .5rem;
+    font-weight: bold;
+    display: none;
+    text-align: center;
+}
+
+#btnFrmEdit {
+    display: none;
+}
