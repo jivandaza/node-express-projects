@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!--     **********************     PAGE METAS     **********************     -->
+
+    <!--     **********************     character encoding     **********************     -->
+    <meta charset="UTF-8">
+    <!--     **********************     scale content on mobile devices     **********************     -->
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <!--     **********************     description     **********************     -->
+    <meta
+            name="description"
+            content="Gestionar las categorías de las películas"
+    >
+    <!--     **********************     color theme on mobile devices     **********************     -->
+    <meta name="theme-color" content="#121b24">
+
+    <!--     **********************     PAGE TITLE     **********************     -->
+    <title>App Movies - Admin</title>
+
+    <!--     **********************     PAGE LINKS     **********************     -->
+
+    <!--     **********************     icon on pc devices     **********************     -->
+    <link rel="icon" href="./../../assets/favicon.png">
+    <!--     **********************     icon on mobile devices     **********************     -->
+    <link rel="apple-touch-icon" href="./../../assets/favicon.png">
+    <!--     **********************     reset styles     **********************     -->
+    <link rel="stylesheet" href="./../../css/reset-styles.css">
+    <!--     **********************     bootstrap css     **********************     -->
+    <link rel="stylesheet" href="./../../css/bootstrap.min.css">
+    <!--     **********************     custom styles     **********************     -->
+    <link rel="stylesheet" href="./../../css/styles.css">
+    <!--     **********************     bootstrap js     **********************     -->
+    <script src="./../../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--     **********************     NAVBAR     **********************     -->
+    <nav class="navbar sticky-top">
+        <div class="container-fluid">
+            <div class="col-md-4">
+                <div class="d-flex justify-content-start">
+                    <div class="center-element me-2">
+                        <img src="./../../assets/favicon.png" width="30" height="24" >
+                    </div>
+                    <span class="navbar-brand mb-0 h1 text-white">App Movies</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-center">
+                    <span class="mb-0 h3 text-white">Admin - Name</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-danger" id="btnLogout">Logout</button>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="container-fluid">
+            <div class="d-flex justify-content-start">
+                <div class="container center-element">
+                    <img src="./../../assets/favicon.png" width="30" height="24" >
+                </div>
+                <span class="navbar-brand mb-0 h1 text-white">App Movies</span>
+            </div>
+            <div class="d-flex justify-content-center">
+                <span class="mb-0 h3 text-white">Admin - Name</span>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="container ml-3">
+                    <button type="button" class="btn btn-danger" id="btnLogout">Logout</button>
+                </div>
+            </div>
+        </div>
+        -->
+    </nav>
+
+    <!--     **********************     FORM ADD TASK     **********************     -->
+    <form id='frmAddTask' class="container col-md-4 my-5 text-white">
+        <h3 class='text-center mb-4'>
+            <span class='material-symbols-outlined'>
+                task
+            </span>
+            Movie Category
+        </h3>
+        <input type="text" name='title' id='title' class='form-control' placeholder='Enter category'>
+        <div id="frmMessage"></div>
+        <button type='submit' class='btn btn-success mt-4 col-md-12' id='btnSave'>Save</button>
+    </form>
+
+    <div class="container col-md-6">
+        <table class="table table-hover text-white">
+            <thead>
+            <tr class="text-center">
+                <th>Number</th>
+                <th>Category</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Suspense</td>
+                <td>
+                    <a href='' class='center-element'>
+                    <span class='material-symbols-outlined'>
+                        cached
+                    </span>
+                    </a>
+                    <a href='' class=' center-element'>
+                    <span class='material-symbols-outlined'>
+                        delete
+                    </span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>@twitter</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>@twitter</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>@twitter</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>@twitter</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>@twitter</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>@twitter</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <!--     **********************     SCRIPTS     **********************     -->
+    <script src="./../../js/admin.js" type="module"></script>
+</body>
+</html>

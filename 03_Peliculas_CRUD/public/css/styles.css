@@ -1,0 +1,50 @@
+html {
+    background-color: #141E27;
+}
+
+body {
+    background-color: #141B27;
+    height: auto;
+}
+
+.navbar {
+    background-color: #121B24;
+}
+
+.center-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar input[type="search"] {
+    background-color: #141E27;
+    color: aliceblue;
+    width: 100vh;
+}
+
+#btnLogin {
+    background-color: #141E27;
+    color: aliceblue;
+}
+
+#btnLogin:hover {
+    opacity: .8;
+}
+
+#frmUserRegister {
+    background-color: #FFF;
+    color: #121B24;
+}
+
+#frmUserRegister h2 {
+    color: #121B24;
+}
+
+#frmUserRegister button {
+    background-color: #121B24;
+}
+
+#frmUserRegister button:hover {
+    opacity: 1 !important;
+}
